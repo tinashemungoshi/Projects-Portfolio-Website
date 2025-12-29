@@ -1,36 +1,65 @@
-# Portfolio (Example)
+# Personal Projects Portfolio Website
 
-An example personal projects portfolio using assets from the web (Google Fonts, Feather Icons, Unsplash images) to stay portable and copyright-safe.
+This repository hosts a simple, static portfolio website to showcase projects, certifications, and contact information. It uses vanilla HTML, CSS, and JavaScript, with Google Fonts and Feather Icons for a clean, responsive UI.
 
-## Preview Locally
+## Features
 
-From the Portfolio folder:
+- Responsive layout and modern styling (Inter font, clean UI)
+- Accessible navigation with active-section highlighting
+- Dynamic project cards with search and tag filters
+- Certifications gallery with PNG previews and linked PDFs
+- Lightweight dependencies: Google Fonts + Feather Icons (no build step)
+
+## Folder Structure
+
+- `index.html` — main site entry
+- `styles.css` — primary stylesheet used by `index.html`
+- `script.js` — main JavaScript powering nav, search, filters, and project cards
+- `assets/images/` — site images (e.g., hero portrait and project images)
+- `assets/Certificates/` — certificate PNGs and PDFs used in the Certifications section
+- `assets/` — contains `styles.css` and `script.js` not referenced by `index.html` (kept for optional use)
+- `Portfolio/` — placeholder for a standalone portfolio variant (currently empty)
+
+## Preview Locally (Windows)
+
+Option 1 — open directly:
+- Double‑click `index.html` to open in your browser.
+
+Option 2 — local server (recommended for consistent script behavior):
 
 ```powershell
-Push-Location "C:\Users\tinas\OneDrive\Desktop\TM\Projects\Python\Website\Portfolio"
+Push-Location "C:\Users\tinas\OneDrive\Documents\GitHub\PP-Website"
 python -m http.server 8000
-# Open http://localhost:8000 in your browser
+Start-Process "http://localhost:8000"
 ```
 
-If Python isn't available, you can also double-click `index.html` to open directly, but some browsers restrict local scripts.
+## Customize Content
 
-## Asset Sources
+- Projects: Edit the `projects` array in `script.js` (title, description, image path, tags, links).
+- Certificates: Add PNG + PDF files into `assets/Certificates/` and reference them in `index.html`.
+- Images: Place hero and project images in `assets/images/` and update paths in `index.html` / `script.js`.
+- Branding: Update titles, headings, and social links directly in `index.html`.
+
+## Deployment (GitHub Pages)
+
+This is a static site and can be deployed via GitHub Pages:
+- Push the repo to GitHub.
+- In GitHub → Settings → Pages: set Source to `Deploy from a branch`, then choose `main` and `/ (root)`.
+- The site will be available at your GitHub Pages URL after a short build.
+
+## Asset Sources & Licenses
 
 - Fonts: Google Fonts (Inter) — free to use
-- Icons: Feather Icons (MIT license)
-- Images: Unsplash photos — free to use (no attribution required, but recommended)
+- Icons: Feather Icons — MIT license
+- Images: Unsplash photos — free to use (attribution recommended)
 
-Image credits (examples):
-- Tech background: https://unsplash.com/photos/9eb780fc7f66
-- Robotics chip: https://unsplash.com/photos/4636190af475
-- Developer setup: https://unsplash.com/photos/dccba630e2f6
+## Notes
 
-## Structure
+- `index.html` references the root `styles.css` and `script.js`. Files under `assets/` with the same names are currently not used.
+- The `Portfolio/` directory is reserved for a standalone variant and may be populated later.
 
-- `index.html` — page scaffold
-- `styles.css` — responsive, modern styling
-- `script.js` — dynamic project cards, search & filters
+## Contact
 
-## Customize
-
-Edit `script.js` to change projects (title, desc, image, tags, links). Replace Unsplash image URLs with your own, or keep them for demo.
+- Email: tinashesean11@gmail.com
+- LinkedIn: https://www.linkedin.com/in/tinasheseanmungoshi
+- GitHub: https://github.com/GrantedV1rus
