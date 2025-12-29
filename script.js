@@ -70,14 +70,13 @@
       }
     },
     {
-      id: 'dashboard-viz',
-      title: 'Ongoing',
-      desc: '',
-      image: 'assets/images/ongoing.jpg',
-      tags: [],
+      id: 'projects-portfolio-website',
+      title: 'Professional Projects Portfolio Website',
+      desc: 'An HTML, CSS, and JavaScript portfolio website showcasing professional projects in data analytics, business intelligence, and digital solutions.',
+      image: 'assets/images/Screenshot 2025-12-29 221312.png',
+      tags: ['HTML', 'CSS', 'JavaScript'],
       links: {
-        repo: '',
-        demo: '#'
+        repo: 'https://github.com/GrantedV1rus/Projects-Portfolio-Website',
       }
     },
     {
