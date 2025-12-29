@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TSM Logo">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e90ff"/>
+      <stop offset="100%" stop-color="#4169e1"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="44" height="44" rx="10" fill="url(#g)"/>
+  <g fill="#0b0f19">
+    <circle cx="24" cy="24" r="20" fill="rgba(255,255,255,0.10)"/>
+  </g>
+  <text x="24" y="28" text-anchor="middle" font-size="16" font-weight="700" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" fill="#0b0f19">TSM</text>
+</svg>
