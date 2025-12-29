@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tinashe Sean Mungoshi - Projects Portfolio</title>
+  <meta name="description" content="Personal projects portfolio showcasing data, web, and automation work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Feather Icons (MIT) -->
+  <script src="https://unpkg.com/feather-icons@4.29.1/dist/feather.min.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <!-- Loading Overlay -->
+  <div id="loader" class="loader-overlay" aria-live="polite" aria-busy="true">
+    <div class="loader-inner" role="status" aria-label="Loading">
+      <div class="spinner" aria-hidden="true"></div>
+      <p class="loader-text">Loading…</p>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo">TSM</span>
+        <div>
+          <h1 class="brand-title">Tinashe Sean Mungoshi</h1>
+          <p class="brand-sub">Business, Data, IT & Web Projects</p>
+        </div>
+      </div>
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certificates" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+      <div class="hero-text">
+        <h2>Personal Projects Portfolio</h2>
+        <p>
+          A collection of end-to-end projects spanning ETL pipelines, databases, 
+          Power BI dashboards, APIs, and web applications, built using real-world data to demonstrate practical, 
+          production-ready solutions.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://linkedin.com/in/tinasheseanmungoshi" target="_blank" rel="noopener"><i data-feather="linkedin"></i>LinkedIn</a>
+          <a class="btn" href="https://github.com/GrantedV1rus" target="_blank" rel="noopener"><i data-feather="github"></i>GitHub</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img alt="professional portrait of Tinashe Sean Mungoshi" src="assets/images/76C46085-1F59-4A32-86F0-5B9194A301D4.jpeg" />
+      </div>
+      </div>
+    </section>
+
+    
+
+    <!--About section-->
+    <section id="about" class="section">
+      <div class="container">
+      <h2>About</h2>
+      <p>
+        I am a Business Management graduate specialising in Innovation and Information Technology, 
+        with a strong interest in business analytics, data-driven decision-making, and digital transformation. 
+        My academic and project experience sits at the intersection of business strategy and technology, 
+        where I focus on using data, systems, and analytical tools to solve real organisational problems.
+        Throughout my studies, I have developed practical skills in Python, SQL, Power BI, Excel, HTML, CSS, and JavaScript, 
+        alongside a solid understanding of business processes, innovation frameworks, and digital strategy. 
+        I particularly enjoy working with data - from cleaning and modelling datasets to building dashboards and insights that support evidence-based decision-making.
+      </p>
+      <p>  
+        This website showcases selected projects that reflect my ability to translate business requirements into technical solutions. 
+        Each project demonstrates structured problem-solving, analytical thinking, and a focus on practical outcomes rather than theory alone. 
+        Where possible, I aim to design solutions that are scalable, user-focused, and aligned with organisational goals.
+      </p>
+      <p>
+        I am currently progressing towards a career in business intelligence and data analytics, with long-term ambitions in data engineering and digital innovation. 
+        I am committed to continuous learning, professional development, and applying technology in ways that create measurable value for organisations.
+      </p>  
+      </div>
+    </section>
+
+    <!-- projects section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+      <div class="toolbar" aria-label="Project Filters">
+        <div class="search">
+          <i data-feather="search" aria-hidden="true"></i>
+          <input id="searchInput" type="search" placeholder="Search projects (title, tags, stack)" aria-label="Search projects" />
+        </div>
+        <div class="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="python">Python</button>
+          <button class="chip" data-filter="postgresql">PostgreSQL</button>
+          <button class="chip" data-filter="etl">ETL</button>
+          <button class="chip" data-filter="excel">Excel</button>
+          <button class="chip" data-filter="power bi">Power BI</button>
+        </div>
+      </div>
+      <!-- Cards render here via script.js -->
+      <div id="projectsGrid" class="grid"></div>
+      </div>
+    </section>
+
+    <!-- certificates section -->
+    <section id="certificates" class="section" aria-label="Certificates">
+      <div class="container">
+      <h2>Certifications</h2>
+      <div class="certs-grid">
+        <article class="cert-card" style="--ratio: 1.2953;">
+          <h3 class="cert-title"><span>Excel Expert</span><a class="open-link" href="assets/Certificates/Excel%20Expert.pdf" target="_blank" rel="noopener"><i data-feather="external-link"></i><span>Open PDF</span></a></h3>
+          <img alt="Excel Expert Certificate" src="assets/Certificates/Excel%20Expert.png" loading="lazy" />
+        </article>
+        <article class="cert-card" style="--ratio: 1.2911;">
+          <h3 class="cert-title"><span>Microsoft Excel Associate</span><a class="open-link" href="assets/Certificates/Microsoft%20Excel%20Associate%20Certificate.pdf" target="_blank" rel="noopener"><i data-feather="external-link"></i><span>Open PDF</span></a></h3>
+          <img alt="Microsoft Excel Associate Certificate" src="assets/Certificates/Microsoft%20Excel%20Associate%20Certificate.png" loading="lazy" />
+        </article>
+        <article class="cert-card" style="--ratio: 1.2932;">
+          <h3 class="cert-title"><span>Microsoft Office Specialist — Associate</span><a class="open-link" href="assets/Certificates/Microsoft%20Office%20Specialist%20-%20Associate%20Certificate.pdf" target="_blank" rel="noopener"><i data-feather="external-link"></i><span>Open PDF</span></a></h3>
+          <img alt="Microsoft Office Specialist - Associate Certificate" src="assets/Certificates/Microsoft%20Office%20Specialist%20-%20Associate%20Certificate.png" loading="lazy" />
+        </article>
+        <article class="cert-card" style="--ratio: 1.2918;">
+          <h3 class="cert-title"><span>Microsoft PowerPoint Associate</span><a class="open-link" href="assets/Certificates/Microsoft%20PowerPoint%20Associate%20Certificate.pdf" target="_blank" rel="noopener"><i data-feather="external-link"></i><span>Open PDF</span></a></h3>
+          <img alt="Microsoft PowerPoint Associate Certificate" src="assets/Certificates/Microsoft%20PowerPoint%20Associate%20Certificate.png" loading="lazy" />
+        </article>
+        <article class="cert-card" style="--ratio: 1.2938;">
+          <h3 class="cert-title"><span>Microsoft Word Associate</span><a class="open-link" href="assets/Certificates/Microsoft%20Word%20Associate%20Certificate.pdf" target="_blank" rel="noopener"><i data-feather="external-link"></i><span>Open PDF</span></a></h3>
+          <img alt="Microsoft Word Associate Certificate" src="assets/Certificates/Microsoft%20Word%20Associate%20Certificate.png" loading="lazy" />
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section" aria-label="Contact">
+      <div class="container">
+      <h2>Contact</h2>
+      
+      <p>Want to chat about projects or opportunities? Reach out via any of the links below.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="mailto:tinashesean11@gmail.com"><i data-feather="mail"></i><span>Email</span></a>
+        <a class="btn" href="https://www.linkedin.com/in/tinasheseanmungoshi" target="_blank" rel="noopener"><i data-feather="linkedin"></i><span>LinkedIn</span></a>
+        <a class="btn" href="https://github.com/GrantedV1rus" target="_blank" rel="noopener"><i data-feather="github"></i><span>GitHub</span></a>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social">
+        <a href="mailto:tinashesean11@gmail.com" class="icon-link" aria-label="Email"><i data-feather="mail"></i></a>
+        <a href="https://www.linkedin.com/in/tinasheseanmungoshi" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+        <a href="https://github.com/GrantedV1rus" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub"><i data-feather="github"></i></a>
+      </div>
+      <p>© 2025 Tinashe Sean Mungoshi. Assets via Google Fonts, Feather Icons, and Unsplash.</p>
+    </div>
+  </footer>
+</body>
+</html>
